@@ -101,5 +101,6 @@ if __name__ == '__main__':
     for i in cpu_dict.items():
         x = datetime.datetime.utcfromtimestamp(int(i[0]))
         xy = x, i[1]
+        print(xy)
         line_data.append(xy)
     mat_line(line_data)
